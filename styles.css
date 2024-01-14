@@ -100,13 +100,11 @@ a, .small-header, .button, .footer {
     font-style: italic;
     font-weight: lighter;
     color: #1f2937;
-    padding: 150px 375px;
-    display: flex;
-    flex-direction: column;
+    padding: 50px 375px;
 }
 
 .author {
-    align-self: self-end;
+    text-align: end;
 }
 
 /*beginning of sign up card*/

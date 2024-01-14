@@ -1,6 +1,7 @@
 body {
     /* to cover the whole width */
     margin: 0;
+    max-width: 1;
 }
 
 .header, .footer {
@@ -51,14 +52,6 @@ a, .small-header, .button, .footer {
     font-size: 48px;
     font-weight: bolder;
     color: #f9faf8;
-}
-
-.left-header-content {
-   flex: 1;
-}
-
-.logo {
-    flex: 1.25;
 }
 
 .button, .sign-up {

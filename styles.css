@@ -1,42 +1,97 @@
 body {
+    /* to cover the whole width */
     margin: 0;
 }
 
 .header, .footer {
+    /* add style here */
     background-color: #1f2937;
 }
 
+
 .top-header {
+    /* to display content in row and on both end of the screen */
     display: flex;
     justify-content: space-between;
-    color: #f9faf8;
-    font-size: 24px;
+    padding: 30px 225px 0px 225px;
 }
 
+/* to remove link style */
 a {
     text-decoration: none;
+}
+
+.left-header {
+    font-size: 24px;
+    font-weight: bold;
     color: #f9faf8;
 }
 
-#large-header {
+.right-header {
+    display: flex;
+    gap: 24px;
+}
+
+.bottom-header {
+    /* display content side by side */
+    display: flex;
+    padding: 150px 225px;
+    justify-content: space-between;
+    gap: 75px;
+    height: 300px;
+}
+
+a, .small-header, .button, .footer {
+    /* same font size and color as mentioned */
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+.large-header {
     font-size: 48px;
     font-weight: bolder;
     color: #f9faf8;
 }
 
-#small-header, .right-links{
-    font-size: 18px;
-    color: #f9faf8;
+.left-header-content {
+   flex: 1;
+}
+
+.logo {
+    flex: 1.25;
 }
 
 .button, .sign-up {
-    background-color: #3883f6;
+    background-color: #3882f6;
+    padding: 4px 24px;
+    border-radius: 10px;
+    font-weight: bold;
 }
 
+.sign-up button {
+    border: 2px solid white;
+}
+
+.small-header,.button {
+    margin-top: 18px;
+}
+
+/*starting of content*/
+
 .content-img {
+    text-align: center;
     font-size: 36px;
     font-weight: bolder;
     color: #1f2937;
+    padding: 75px 225px 150px 225px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    font-size: 18px;
+    margin-top: 75px;
 }
 
 .content-quote {
@@ -45,13 +100,25 @@ a {
     font-style: italic;
     font-weight: lighter;
     color: #1f2937;
-}
-
-.button {
-    border-radius: 5px;
-}
-
-.bottom-header {
+    padding: 150px 375px;
     display: flex;
-    margin: 75px 125px;
+    flex-direction: column;
+}
+
+.author {
+    align-self: self-end;
+}
+
+/*beginning of sign up card*/
+
+.sign-up {
+    margin: 100px 225px;
+    padding: 50px 125px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer {
+    padding: 25px;
+    text-align: center;
 }
